@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <p>Strawberries grow in bushes not trees!</p>
+        <p id="product_value"></p>
+        <script>
+            var numbers = [28, 6, 19, 95];
+
+            function myFunction(num) {
+                return num * 10;
+            }
+            var newarray = numbers.map(myFunction);
+            document.getElementById("product_value").innerHTML = newarray;
+
+            function myFunction1() {
+                var x = 8;
+                var y = 16;
+                var a = eval("x + y") + "<br>";
+                document.getElementById("result").innerHTML = a;
+            }
+        </script>
+
+        <p>Click the button</p>
+        <button onclick="myFunction1()">Try it</button>
+        <p id="result"></p>
+    </body>
+</html>
